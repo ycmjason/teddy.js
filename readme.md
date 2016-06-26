@@ -11,9 +11,9 @@ The following example aims to demonstrate the brief idea of teddy. **For working
 <div id="footer"></div>
 
 <!-- import Jquery -->
-<script src="jquery.js">
+<script src="jquery.js"></script>
 <!-- import teddy.js -->
-<script src="teddy.js">
+<script src="teddy.js"></script>
 
 <script>
   ted({
