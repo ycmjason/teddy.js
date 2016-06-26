@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.css">
+  </head>
+  <body>
+    <div class="main">
+      <header></header>
+      <section id="fullpage" style="text-align: center">
+        <div id="welcome" class="section"></div>
+        <div id="intro" class="section"></div>
+        <div id="contact" class="section"></div>
+      </section>
+    </div>
+
+    <!-- importing JQuery -->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <!-- importing fullpage.js -->
+    <script src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"></script>
+    <!-- importing teddy -->
+    <script src="../../teddy.js"></script>
+
+    <script>
+      var pages = {
+        'header': 'templates/header.html',
+        '#welcome': 'templates/welcome.html',
+        '#intro': 'templates/intro.html',
+        '#contact': 'templates/contact.html'
+      };
+      ted({
+        content: '.main',
+        sections: pages,
+        callback: function(){
+          $('#fullpage').fullpage();
+        }
+      });
+    </script>
+  </body>
+</html>

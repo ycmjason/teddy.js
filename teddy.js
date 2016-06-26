@@ -1,18 +1,16 @@
-function bootstrap(opts){
+function ted(opts){
   if(!$) throw "JQuery not found. Expecting $.";
 
   opts = opts || {};
 
-  opts.main = opts.main || '#content';
-  if(!opts.sections){
-    throw "No sections defined.";
-  }
+  opts.content = opts.content || '#content';
+  if(!opts.sections) throw "No sections defined.";
 
   $loading = $('<div>Loading...</div>');
-  $main = $(opts.main);
+  $content = $(opts.content);
 
   $('body').append($loading);
-  $main.hide();
+  $content.hide();
 
 
   var selectors = Object.keys(opts.sections);
@@ -21,13 +19,13 @@ function bootstrap(opts){
   selectors.forEach(function(selector){
     var template = opts.sections[selector];
 
-    $(selector).load(template, function(){
+    $(opts.content + ' ' + selector).load(template, function(){
       // when loading is finish, call the callback
-      if(++loadStage >= loadAim && opts.callback) {
-        $main.show();
+      if(++loadStage >= loadAim) {
+        $content.show();
         $loading.remove();
 
-        opts.callback();
+        if(opts.callback) opts.callback();
       }
     });
   });

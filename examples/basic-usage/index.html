@@ -1,0 +1,33 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <section class="main">
+      <div id="welcome"></div>
+      <hr>
+      <div id="intro"></div>
+      <hr>
+      <div id="contact"></div>
+      <hr>
+    </section>
+
+    <!-- importing JQuery -->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <!-- importing teddy -->
+    <script src="../../teddy.js"></script>
+    <script>
+      var pages = {
+        '#welcome': 'templates/welcome.html',
+        '#intro': 'templates/intro.html',
+        '#contact': 'templates/contact.html'
+      };
+      ted({
+        content: '.main',
+        sections: pages,
+        callback: function(){
+          alert('dynamic loaded three templates');
+        }
+      });
+    </script>
+  </body>
+</html>
