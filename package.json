@@ -1,11 +1,15 @@
 {
   "name": "teddy.js",
-  "version": "v0.0.1",
+  "version": "v0.0.2",
   "description": "Allow dynamic loading of views injecting into html elements.",
   "main": "teddy.js",
   "scripts": {
     "start": "python -m SimpleHTTPServer 8001",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/ycmjason/teddy.js.git"
   },
   "keywords": [
     "teddy",
