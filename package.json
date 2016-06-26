@@ -1,0 +1,20 @@
+{
+  "name": "teddy.js",
+  "version": "1.0.0",
+  "description": "Allow dynamic loading of views injecting into html elements.",
+  "main": "teddy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "teddy",
+    "teddy.js",
+    "dynamic",
+    "view",
+    "load",
+    "bootstrap",
+    "inject"
+  ],
+  "author": "Jason Yu <me@ycmjason.com> (ycmjason.com)",
+  "license": "MIT"
+}
