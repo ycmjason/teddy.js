@@ -36,6 +36,9 @@ The above code will populate `.welcome` and `#footer` with the content in `templ
 4. Open your browser and go to [localhost:8001](localhost:8001)
 5. Navigate to the examples folders and see the examples.
 
+## Live examples
+- [fullpage.js](https://plnkr.co/edit/1EVyMwYTE8sk8vayjk4G)
+
 ## Working with fullpage.js
 See the fullpage.js example in the `examples` directory.
 
