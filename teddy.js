@@ -25,7 +25,7 @@ function ted(opts){
         $content.show();
         $loading.remove();
 
-        if(opts.callback) opts.callback();
+        if(opts.done) opts.done();
       }
     });
   });

@@ -22,8 +22,8 @@ The following example aims to demonstrate the brief idea of teddy. **For working
       '#footer': 'templates/footer.html'
     },
     done: function(){
-    alert('done loading all the templates');
-  }
+      alert('done loading all the templates');
+    }
   });
 </script>
 ```
